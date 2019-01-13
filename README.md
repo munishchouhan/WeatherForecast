@@ -21,6 +21,7 @@ Once the build is successful, you can find the jar file of this application in ~
 Run the jar file using below command
 
 > cd target
+
 >java -jar weatherforecast-0.0.1-SNAPSHOT.jar
 
 
