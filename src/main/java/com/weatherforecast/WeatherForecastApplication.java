@@ -1,4 +1,4 @@
-package com.finleap.weatherforecast;
+package com.weatherforecast;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

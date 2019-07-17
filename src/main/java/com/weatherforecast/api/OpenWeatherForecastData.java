@@ -1,4 +1,4 @@
-package com.finleap.weatherforecast.api;
+package com.weatherforecast.api;
 
 import java.io.Serializable;
 import java.util.ArrayList;

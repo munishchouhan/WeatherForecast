@@ -1,4 +1,4 @@
-package com.finleap.weatherforecast;
+package com.weatherforecast;
 
 import java.util.Collections;
 
@@ -25,8 +25,8 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
 	}
 
 	private ApiInfo apiInfo() {
-		return new ApiInfo("FinLeap REST API", "Weather forecasting by FinLeap", null, null,
-				new Contact("FinLeap", "www.finleap.com", "contact@finleap.com"), null, null, Collections.emptyList());
+		return new ApiInfo("Manu REST API", "Weather forecasting by Manu", null, null,
+				new Contact("Manu", "www.com", "hrma017@gmail.com"), null, null, Collections.emptyList());
 	}
 
 	@Override

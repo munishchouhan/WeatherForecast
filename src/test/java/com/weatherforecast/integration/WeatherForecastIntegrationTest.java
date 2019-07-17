@@ -1,4 +1,4 @@
-package com.finleap.weatherforecast.integration;
+package com.weatherforecast.integration;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo;
@@ -15,8 +15,8 @@ import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.client.MockRestServiceServer;
 
-import com.finleap.weatherforecast.api.FinLeapWeatherMatrix;
-import com.finleap.weatherforecast.api.resources.WeatherForecastService;
+import com.Manu.weatherforecast.api.ManuWeatherMatrix;
+import com.Manu.weatherforecast.api.resources.WeatherForecastService;
 
 /*
  *This class contains the test to check the integration between this application and openweathermap.org
@@ -25,7 +25,7 @@ import com.finleap.weatherforecast.api.resources.WeatherForecastService;
 @RestClientTest(WeatherForecastService.class)
 @TestPropertySource(properties = { "openweathermap.api.key=manukey", "openweathermap.max.days=3",
 		"openweathermap.forecast.url=http://api.openweathermap.org/data/2.5/forecast?q={city}&APPID={apikey}&units=imperial",
-		"finleap.day.starttime=6", "finleap.day.endtime=18", "finleap.night.starttime=18", "finleap.night.endtime=6" })
+		"Manu.day.starttime=6", "Manu.day.endtime=18", "Manu.night.starttime=18", "Manu.night.endtime=6" })
 
 public class WeatherForecastIntegrationTest {
 	private static final String url_openweathermap = "http://api.openweathermap.org/data/2.5/";
@@ -36,17 +36,17 @@ public class WeatherForecastIntegrationTest {
 	private WeatherForecastService weatherForecastService;
 
 	@Test
-	public void getFinleapWeatherForecastResponse() {
+	public void getManuWeatherForecastResponse() {
 		this.mockRestServiceServer
 				.expect(requestTo(url_openweathermap + "forecast?q=cyberjaya&APPID=manukey&units=imperial"))
 				.andRespond(withSuccess(new ClassPathResource("openweathermap_cyberjaya.json", getClass()),
 						MediaType.APPLICATION_JSON));
-		List<FinLeapWeatherMatrix> FinLeapWeatherMatrices = this.weatherForecastService
-				.getFinleapWeatherForecastResponse("cyberjaya");
-		FinLeapWeatherMatrix finLeapWeatherMatrix = FinLeapWeatherMatrices.get(0);
-		assertThat(finLeapWeatherMatrix.getAvg_day_temp()).isEqualTo(82.8775);
-		assertThat(finLeapWeatherMatrix.getAvg_night_temp()).isEqualTo(78.54249999999999);
-		assertThat(finLeapWeatherMatrix.getAvg_pressure()).isEqualTo(1020.005);
+		List<ManuWeatherMatrix> ManuWeatherMatrices = this.weatherForecastService
+				.getManuWeatherForecastResponse("cyberjaya");
+		ManuWeatherMatrix ManuWeatherMatrix = ManuWeatherMatrices.get(0);
+		assertThat(ManuWeatherMatrix.getAvg_day_temp()).isEqualTo(82.8775);
+		assertThat(ManuWeatherMatrix.getAvg_night_temp()).isEqualTo(78.54249999999999);
+		assertThat(ManuWeatherMatrix.getAvg_pressure()).isEqualTo(1020.005);
 		this.mockRestServiceServer.verify();
 	}
 }
