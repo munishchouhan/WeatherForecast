@@ -1,8 +1,8 @@
-# FinLeap Weather Forecasting Rest API
+# Weather Forecasting Rest API
 
 ## Getting started
 This application is build on spring boot v 2.1.2.Release
-To use FinLeap Weather Forecasting Rest API, User need to register with
+To use Weather Forecasting Rest API, User need to register with
 http://openweathermap.org service to get APIKEY, which will be added in application.properties file.
 
 ## Prerequisite
@@ -40,12 +40,12 @@ This can be used  for manual testing
 ## Unit Testing
 To  Test Application : 
 
-you can run com.finleap.weatherforecast.WeatherForcastApplicationTests
+you can run com.weatherforecast.WeatherForcastApplicationTests
 
 ## Integration Testing
 To Test Integration with openweathermap.org: 
 
-you can run com.finleap.weatherforecast.integration.WeatherForecastIntegrationTest
+you can run com.weatherforecast.integration.WeatherForecastIntegrationTest
 
 ## Reasoning and Motivations
 
