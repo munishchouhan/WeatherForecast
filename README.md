@@ -1,4 +1,4 @@
-# Weather Forecasting Rest API version 1.2
+# Weather Forecasting Rest API version 1.3
 
 ## Getting started
 This application is build on spring boot v 2.1.2.Release
