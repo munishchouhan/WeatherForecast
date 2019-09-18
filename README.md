@@ -72,4 +72,3 @@ Following are my reasoning and motivations through out this case study:
 * server port is also changed to 9090 because mainly 8080 is already taken in several machines.
 * I have used multiple functions to divide the logic and increase the code reuse.
 * LocalDate and LocalTime is added in the response of openweathermap.org, which makes it easy to filter the entries according to the date and time.
-* 
