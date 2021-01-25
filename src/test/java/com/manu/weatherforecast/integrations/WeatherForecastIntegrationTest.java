@@ -1,4 +1,4 @@
-package com.weatherforecast.integration;
+package com.manu.weatherforecast.integrations;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo;
@@ -15,8 +15,8 @@ import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.client.MockRestServiceServer;
 
-import com.Manu.weatherforecast.models.WeatherMatrix;
-import com.Manu.weatherforecast.services.WeatherForecastService;
+import com.manu.weatherforecast.models.WeatherMatrix;
+import com.manu.weatherforecast.services.WeatherForecastService;
 
 /*
  *This class contains the test to check the integration between this application and openweathermap.org

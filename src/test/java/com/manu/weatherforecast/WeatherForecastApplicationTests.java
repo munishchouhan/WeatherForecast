@@ -1,5 +1,4 @@
-package com.weatherforecast;
-
+package com.manu.weatherforecast;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -13,9 +12,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
-import com.Manu.weatherforecast.api.WeatherMatrix;
-import com.Manu.weatherforecast.api.resources.WeatherForecastController;
-import com.Manu.weatherforecast.api.resources.WeatherForecastService;
+import com.manu.weatherforecast.models.WeatherMatrix;
+import com.manu.weatherforecast.controllers.WeatherForecastController;
+import com.manu.weatherforecast.services.WeatherForecastService;
 import static org.hamcrest.CoreMatchers.is;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;

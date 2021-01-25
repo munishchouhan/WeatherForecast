@@ -1,7 +1,8 @@
-# Weather Forecasting Rest API version 1.2
+# Weather Forecasting Rest API version 2.0
+
 
 ## Getting started
-This application is build on spring boot v 2.1.2.Release
+This application is build on spring boot v 2.4.2.Release
 To use Weather Forecasting Rest API, User need to register with
 http://openweathermap.org service to get APIKEY, which will be added in application.properties file.
 
