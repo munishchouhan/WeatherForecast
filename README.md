@@ -15,15 +15,13 @@ http://openweathermap.org service to get APIKEY, which will be added in applicat
 This application uses MAVEN 3.5.2 for build.
 Use below command at the root directory of this project
 
->mvn clean install
+> mvn clean install
 
 ## Run
 Once the build is successful, you can find the jar file of this application in ~/target folder
 Run the jar file using below command
 
-> cd target
-
->java -jar weatherforecast-0.0.1-SNAPSHOT.jar
+>java -jar .\target\weatherforecast-0.0.1-SNAPSHOT.jar
 
 
 ## Access API
